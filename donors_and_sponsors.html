@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donors & Sponsors | PUSAK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+    <div class="container nav">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+
+            <!-- Dropdown Menu -->
+            <div class="dropdown">
+                <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Files ▼</button>
+                <ul class="dropdown-content" aria-label="Files submenu">
+                    <li><a href="pdfs/constitution.pdf" target="_blank">Constitution</a></li>
+                    <li><a href="pdfs/commitment.pdf" target="_blank">Commitment</a></li>
+                    <li><a href="pdfs/brochure.pdf" target="_blank">Brochure</a></li>
+                    <li><a href="pdfs/certificates.pdf" target="_blank">Certificates</a></li>
+                </ul>
+            </div>
+
+            <a href="#" class="btn">Join Us</a>
+        </nav>
+    </div>
+</header>
+
+<!-- ========== DONORS & SPONSORS ========== -->
+<section class="dignitaries">
+    <div class="container">
+        <h2>Donors & Sponsors</h2>
+        <p class="section-intro">Our valued supporters who help PUSAK achieve its mission</p>
+
+        <div class="dignitary-grid">
+            <!-- Donor/Sponsor 1 -->
+            <div class="dignitary-card">
+                <img src="donors/member1.jpg" alt="Donor Name">
+                <p class="speech"></p>
+                <h3>Md. Abdullah Rahman</h3>
+                <span>Individual Donor</span>
+            </div>
+
+            <!-- Donor/Sponsor 2 -->
+            <div class="dignitary-card">
+                <img src="donors/member2.jpg" alt="Donor Name">
+                <p class="speech"></p>
+                <h3>Md. Niaz Rahman</h3>
+                <span>Individual Donor</span>
+            </div>
+
+            <!-- Donor/Sponsor 3 -->
+            <div class="dignitary-card">
+                <img src="donors/member3.jpg" alt="Donor Name">
+                <p class="speech"></p>
+                <h3>Rahman & Co.</h3>
+                <span>Corporate Sponsor</span>
+            </div>
+
+            <!-- Donor/Sponsor 4 -->
+            <div class="dignitary-card">
+                <img src="donors/member4.jpg" alt="Donor Name">
+                <p class="speech"></p>
+                <h3>Shah Enterprise</h3>
+                <span>Corporate Sponsor</span>
+            </div>
+
+            <!-- Donor/Sponsor 5 -->
+            <div class="dignitary-card">
+                <img src="donors/member5.jpg" alt="Donor Name">
+                <p class="speech"></p>
+                <h3>Ms. Farhana Akter</h3>
+                <span>Individual Donor</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+    <div class="container footer-grid">
+        <div>
+            <h3>PUSAK</h3>
+            <p>Public University Students' Association of Kamalganj</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <a href="#">About</a>
+            <a href="#">Programs</a>
+            <a href="#">Join</a>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p>Email: info@pusak.org</p>
+            <p>Kamalganj, Moulvibazar</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Dropdown JS -->
+<script>
+    const dropBtn = document.querySelector('.dropbtn');
+    const dropdown = document.querySelector('.dropdown');
+
+    dropBtn.addEventListener('click', () => {
+        dropdown.classList.toggle('show');
+        const expanded = dropBtn.getAttribute('aria-expanded') === 'true' ? 'false' : 'true';
+        dropBtn.setAttribute('aria-expanded', expanded);
+    });
+
+    window.addEventListener('click', (e) => {
+        if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove('show');
+            dropBtn.setAttribute('aria-expanded','false');
+        }
+    });
+</script>
+
+</body>
+</html>
