@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">   
+ <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PUSAK | Public University Students' Association of Kamalganj</title>
     <link rel="stylesheet" href="style.css">
@@ -299,50 +300,73 @@
 </section>
 
 <!-- ========== FOOTER ========== -->
-<footer class="footer">
-    <div class="container footer-grid">
-        <div>
-            <h3>PUSAK</h3>
-            <p>Public University Students' Association of Kamalganj</p>
-        </div>
-        <div>
-            <h4>Quick Links</h4>
-            <a href="#">About</a>
-            <a href="#">Programs</a>
-            <a href="#">Join</a>
-        </div>
-        <div>
-            <h4>Contact</h4>
-            <p>Email: info@pusak.org</p>
-            <p>Kamalganj, Moulvibazar</p>
-        </div>
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Column 1 : Logo & Social -->
+    <div class="footer-column footer-brand">
+      <img src="https://i.ibb.co.com/99DZ5j0t/10056.jpg" alt="PUSAK logo" class="footer-logo">
+      <p class="download-text">Be With PUSAK</p>
+
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=100091591820586" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
     </div>
+
+    <!-- Column 2 : Links -->
+    <div class="footer-column">
+      <h3>Link</h3>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Members Portal</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 : Contact -->
+    <div class="footer-column">
+      <h3>Contact With Us</h3>
+      <div class="contact-item">
+        <i class="fas fa-phone-alt"></i>
+        <span>+8801799-0520001</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <span>kamalganjpublician@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Kamalganj Upazila, Moulvibazar, Sylhet, Bangladesh</span>
+      </div>
+    </div>
+
+    <!-- Column 4 : Approvals -->
+    <div class="footer-column">
+      <h3>Approvals</h3>
+      <p>Licence No: PUSAK1234</p>
+    </div>
+
+  </div>
+
+  <!-- Bottom Section -->
+  <div class="footer-bottom">
+    <p class="left-text">© All rights reserved to PUSAK</p>
+    <p class="right-text">Website created by- Team Spexograph</p>
+  </div>
 </footer>
 
-<!-- Dropdown JS -->
-<script>
-    const dropdowns = document.querySelectorAll('.dropdown');
-
-    dropdowns.forEach(dropdown => {
-        const btn = dropdown.querySelector('.dropbtn');
-
-        btn.addEventListener('click', () => {
-            dropdown.classList.toggle('show');
-            const expanded = btn.getAttribute('aria-expanded') === 'true' ? 'false' : 'true';
-            btn.setAttribute('aria-expanded', expanded);
-        });
-    });
-
-    window.addEventListener('click', (e) => {
-        dropdowns.forEach(dropdown => {
-            if (!dropdown.contains(e.target)) {
-                dropdown.classList.remove('show');
-                dropdown.querySelector('.dropbtn')
-                        .setAttribute('aria-expanded', 'false');
-            }
-        });
-    });
-</script>
-
+<script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
 </body>
 </html>
